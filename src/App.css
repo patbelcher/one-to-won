@@ -1,5 +1,15 @@
 .App {
   text-align: center;
+  
+}
+.other-body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-logo {
@@ -28,11 +38,56 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*Currency converter project */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+
+.cashContainer {
+  border: black solid 1px;
+  width: 500px;
+  background-color:antiquewhite;
+  
+}
+
+.cashContainer input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.cashContainer label {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.cashContainer select {
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.cashContainer button {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100px;
+  border-radius: 10px;
+  height: 50px;
+  background-color: green;
+  color: white;
+}
+.cashContainer button:hover {
+  border: green 1px solid;
+  color: green;
+  background-color: antiquewhite;
+  box-shadow: 0 2px 4px rgba(0, 128, 0, 1)
+}
+
+.myContainer {
 }
