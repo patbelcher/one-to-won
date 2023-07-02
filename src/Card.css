@@ -1,0 +1,30 @@
+/*card */
+.cashContainer {
+    border: black solid 1px;
+    width: 500px;
+    background-color:antiquewhite;
+    
+  }
+
+
+
+
+
+.myCard {
+    border: '10px solid gray'; 
+    padding: '16px'; 
+    border-radius: '14px';
+    background-color: lightgrey;
+    width: 50%;
+ }
+ 
+ img .myImage {
+     width: '100px';
+     margin-bottom: '8px';
+ }
+ 
+ .myCard h3 {
+         font-size: '2.2rem'; 
+         margin-bottom: '4px';
+ }
+ 

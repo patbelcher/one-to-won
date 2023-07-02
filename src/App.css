@@ -1,28 +1,32 @@
+
+
 .App {
   text-align: center;
-  
 }
+  
+
 .other-body {
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
+  background-position: center center;
   width: 100vw;
   height: 100vh;
+  padding-top: 50vh;
+  padding-bottom: 20px;
+    overflow-y: scroll; /* Enable vertical scrolling */
+  }
+  
+  /*
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
+
+/*
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -33,27 +37,204 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+*/
 
-.App-link {
-  color: #61dafb;
-}
 
-/*Currency converter project */
-body {
+.display {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  height: 100vh;
-}
-
-
-
-.cashContainer {
-  border: black solid 1px;
-  width: 500px;
-  background-color:antiquewhite;
+  gap: 15px;
   
 }
+
+.card-Text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 22vh;
+  color: white;
+}
+
+/*cards */
+
+.zepContainer {
+  border: black solid 1px;
+  width: 70vw;
+  height: 40vh;
+  background-color:lightgray;
+  background-image: url("../public/images/jimmyPage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.zepContainerRobert {
+  border: black solid 1px;
+  width: 70vw;
+  height: 40vh;
+  background-color:lightgray;
+  background-image: url("../public/images/robertPlant.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.zepContainerJones {
+  border: black solid 1px;
+  width: 70vw;
+  height: 40vh;
+  background-color:lightgray;
+  background-image: url("../public/images/jognPaulJones.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.zepContainerBonham {
+  border: black solid 1px;
+  width: 70vw;
+  height: 40vh;
+  background-color:lightgray;
+  background-image: url("../public/images/johnBonham.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+/*media query min 768px   */
+@media (min-width: 768px) {
+  .other-body {
+    background-repeat: no-repeat;
+    background-size: 100% 100% !important;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll; /* Enable vertical scrolling */
+    }
+
+
+  .display {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items:center;
+    flex-wrap: wrap;
+    padding-top: 0vh;
+    
+    
+  }
+
+  .zepContainer {
+    width: 45vw;
+    height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .zepContainerRobert {
+    width: 45vw;
+    height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .zepContainerJones {
+    width: 45vw;
+    height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .zepContainerBonham {
+    width: 45vw;
+    height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+
+  }
+
+  /*media query min 992px   */
+  @media (min-width: 992px) {
+    .display {
+      display: flex;
+      flex-direction: row;
+      justify-content:space-evenly;
+      align-items:center;
+      flex-wrap:nowrap;
+      padding-top: 10vh;
+    }
+
+    .zepContainer {
+      width: 23vw;
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .zepContainerRobert {
+      width: 23vw;
+      height: 41vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .zepContainerJones {
+      width: 23vw;
+      height: 41vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .zepContainerBonham {
+      width: 23vw;
+      height: 41vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+  }
+
+  /*media query min 1200px   */
+  @media (min-width: 1200px) {
+    .display {
+      padding-top:10vh;
+      
+      }
+    
+    .fade-out {
+      animation: fadeOut 1s linear 5s forwards;
+    }
+    
+    @keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+
+
+
+
+  
+
+
+
+
+.zepContainer img {
+  width: 1vw;
+
+}
+
+
+
+
 
 .cashContainer input {
   margin-top: 10px;
@@ -89,5 +270,40 @@ body {
   box-shadow: 0 2px 4px rgba(0, 128, 0, 1)
 }
 
-.myContainer {
+/* Flip Card */
+.flip-card {
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
 }
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
